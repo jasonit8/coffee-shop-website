@@ -1,10 +1,9 @@
 if __name__ == "__main__":
     from bs4 import BeautifulSoup
 
-
 class footer():
     def __init__(self):
-        f = open('../index_newfooter.html',mode='r',encoding='utf8')
+        f = open('../index.html',mode='r',encoding='utf8')
         self.soup = BeautifulSoup(f.read(),features='lxml')
         f.close()
     def to_html(self,change):
