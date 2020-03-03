@@ -4,10 +4,10 @@
 tức là ngay phía trên thẻ đóng (</div>) của nó:
 
 <div id="hidden-banner-text" style="display: none;">
- <p id="bannertitle1">welcome, enjoy the original</p>
- <p id="bannertitle2">outstanding coffee</p>
- <p id="bannertext1">fresh porto coffee</p>
- <p id="bannertext2">expresso bar</p>
+ <p id="bannertext1">welcome, enjoy the original</p>
+ <p id="bannertext2">outstanding coffee</p>
+ <p id="bannertitle1">fresh porto coffee</p>
+ <p id="bannertitle2">expresso bar</p>
  <p id="bannertyping1">The amazing flavors will blow your mind.</p>
  <p id="bannertyping2">Since 2001 with you.</p>
 </div>
@@ -40,9 +40,9 @@ function slideshow() {
         t2[0].innerHTML = "";
         t4[0].classList.remove("animation");
     };
-    t1[0].innerHTML = [document.getElementById("bannertitle1").innerHTML,document.getElementById("bannertitle2").innerHTML][myIndex];
+    t1[0].innerHTML = [document.getElementById("bannertext1").innerHTML,document.getElementById("bannertext2").innerHTML][myIndex];
     t1[0].classList.add("animation");
-    t2[0].innerHTML = [document.getElementById("bannertext1").innerHTML,document.getElementById("bannertext2").innerHTML][myIndex];
+    t2[0].innerHTML = [document.getElementById("bannertitle1").innerHTML,document.getElementById("bannertitle2").innerHTML][myIndex];
     t2[0].classList.add("animation");
     t4[0].classList.add("animation");
     x[myIndex].classList.add("fading");
