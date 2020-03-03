@@ -3,11 +3,11 @@ if __name__ == "__main__":
 
 class banner():
     def __init__(self):
-        f = open('../index.html',mode='r',encoding='utf8')
+        f = open('../index.html',encoding='utf8',mode='r')
         self.soup = BeautifulSoup(f.read(),features='lxml')
         f.close()
     def to_html(self,change):
-        f = open('../index_newbanner.html',mode='w',encoding='utf8')
+        f = open('../index_newbanner.html',encoding='utf8',mode='w')
         f.write(change)
         f.close()
     def change_text(self,slide,line,text):
