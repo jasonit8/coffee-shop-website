@@ -3,11 +3,11 @@ if __name__ == "__main__":
 
 class footer():
     def __init__(self):
-        f = open('../index.html',mode='r',encoding='utf8') # bắt buộc có sẵn
+        f = open('../index.html',encoding='utf8',mode='r') # bắt buộc có sẵn
         self.soup = BeautifulSoup(f.read(),features='lxml')
         f.close()
     def to_html(self,change):
-        f = open('../index_newfooter.html',mode='w',encoding='utf8')
+        f = open('../index_newfooter.html',encoding='utf8',mode='w')
         f.write(change)
         f.close()
     def change_image(self,url='img/logo-light.png'):
