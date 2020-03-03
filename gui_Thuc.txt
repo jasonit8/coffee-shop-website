@@ -1,4 +1,4 @@
-﻿* Thức ơi, để chạy file py của anh, nhờ em sửa 2 chỗ. Anh không kéo vì sợ em khó gọp file hơn sửa trực tiếp.
+﻿* Thức ơi, để chạy file py của anh, nhờ em sửa 2 chỗ. Anh không kéo vì sợ em khó gọp file hơn sửa trực tiếp. Cảm ơn em.
 
 1) Trong index.html, thêm dùm anh đoạn code này trước khi kết thúc <div class="section" id="banner">,
 tức là ngay phía trên thẻ đóng (</div>) của nó:
@@ -54,5 +54,3 @@ function slideshow() {
     setTimeout(typeWriter, 8000)
 };
 slideshow();
-
-* cám ơn em.
