@@ -10,7 +10,7 @@ class header():
         f = open('../index_newheader.html',encoding='utf8',mode='w')
         f.write(change)
         f.close()
-    def change_text(self,menu):
+    def change_menu(self,menu):
         for item in range(8): # menu có 8 mục không đổi
             self.soup.find_all(attrs={'class':'header-link'})[item].string.replace_with(menu[item])
         self.to_html(str(self.soup.prettify()))
@@ -21,5 +21,5 @@ class header():
 # ví dụ
 new_menu = ['new home','about','reservations','menu','news','location','elements','buy porto!']
 b = header()
-b.change_text(new_menu)
+b.change_menu(new_menu)
 b.change_logo('img/logo2.png')
